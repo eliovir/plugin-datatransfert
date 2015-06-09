@@ -13,5 +13,5 @@ include::configuration.asciidoc[]
 include::faq.asciidoc[]
 
 '''
-=== Troubleshoting
+=== Dépannage
 include::troubleshoting.asciidoc[]

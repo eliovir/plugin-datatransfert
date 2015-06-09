@@ -22,9 +22,8 @@ require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
 function local_send($_eqLogic, $_source, $_cible, $_file) {
     if(!file_exists($_cible) || !is_dir($_cible)){
         throw new Exception(__('Répertoire cible innexistant : ',__FILE__).$_cible);
-        
     }
     if(!copy($_source . '/' . $_file,$_cible.'/'.$_file)){
-        throw new Exception(__('La copie de : ',__FILE__).$_source . '/' . $_file.__(' vers : ',__FILE__).$_cible.'/'.$_file.__(' a échoué pour une raison incconue',__FILE__));
+        throw new Exception(__('La copie de : ',__FILE__).$_source . '/' . $_file.__(' vers : ',__FILE__).$_cible.'/'.$_file.__(' a échoué pour une raison inconnue',__FILE__));
     }
 }
